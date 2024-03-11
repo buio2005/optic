@@ -7,19 +7,6 @@ Like(Site("yourlifeupdated.net"));
 Like(Site("infotelematico.com"));
 Like(Site("guruhitech.com"));
 
-/*
-	Boost(0) is a no-op ranking wise, but since we discard all non-matching
-	this will make sure that our queries only search in the sites we want.
-	If we had specified a boost other than 0 for each site, then our queries
-	would be significantly slower.
-
-	Likewise the Site("|example.com|") pattern (note the |) allows us to
-	significantly speedup the queries.
-
-	This way we can specify a lot of sites we only want our searches to match against
-	but still have fast queries.
-*/
-
 Rule {
 	Matches {
 		Site("|tivustream.com|")
